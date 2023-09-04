@@ -1,0 +1,230 @@
+.library_body {
+    background: linear-gradient(180deg, #90AEA7 0%, #000 100%);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.album_name {
+    height: 250px;
+    width: 95%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    overflow: hidden;
+}
+
+.album_name img {
+    margin: 0;
+}
+
+
+.album_songs {
+    width: 95%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.buttons {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+}
+
+.playlist_name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    margin-left: -30px;
+}
+
+.playlist_name p {
+    margin: 0;
+    font-size: 13px;
+    color: #fff;
+}
+
+.playlist_name h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 58px;
+    font-weight: 900;
+    color: #fff;
+}
+.Shuffle_play{
+    display: none;
+}
+.btn {
+    height: 100%;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+
+.my_table_container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #00000038;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #FFF;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.img_container {
+    width: 50%;
+    height: 100%;
+    background: url(/assets/Images/Rectangle\ 9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.img_container img {
+    width: 50%;
+    height: 50%;
+}
+
+.my_i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.library_song_name {
+    margin: 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.artist {
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.my_Icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+tr td {
+    height: 30px;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+tr {
+    border-radius: 10px;
+    transition: all 0.5s ease;
+
+}
+
+tr:hover {
+    background-color: #ffffff1f;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .playlist_name h1 {
+        font-size: 35px;
+    }
+
+    .playlist_name p {
+        font-size: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .library_body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .album_name{
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .album_name img {
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+    .playlist_name{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .playlist_name p{
+        display: none;
+    }
+
+    .Shuffle_play{
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: none;
+        background-color: #1ed760;
+        padding: 10px;
+        padding-inline: 30px;
+        text-transform: uppercase;
+        color: #FFF;
+        font-weight: 600;
+    }
+
+    .mobile_view{
+        display: none;
+    }
+
+    tr td {
+        width: 100%;
+    }
+
+    .library_song_name{
+        margin-left: 10px;
+    }
+
+    .artist{
+        margin-left: 20px;
+    }
+    
+}
